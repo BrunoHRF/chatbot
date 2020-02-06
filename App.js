@@ -23,6 +23,7 @@ app.get('/', function(req, res){
         }
     });
 });
+var porta = process.env.PORT || 8080;
+app.listen(porta);
 
-var server = app.listen(3000);
 console.log('Servidor Express iniciado na porta %s', server.address().port);
