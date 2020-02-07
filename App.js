@@ -1,4 +1,4 @@
-var express = require('express'),
+const express = require('express'),
     app = express();
 
 app.get('/', function(req, res){
@@ -25,5 +25,3 @@ app.get('/', function(req, res){
 });
 var porta = process.env.PORT || 8080;
 app.listen(porta);
-
-console.log('Servidor Express iniciado na porta %s', server.address().port);
