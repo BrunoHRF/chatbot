@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script
+      src="https://unpkg.com/blip-chat-widget"
+      type="text/javascript"
+    ></script>
+    <script>
+      (function() {
+        window.onload = function() {
+          new BlipChat()
+            .withAppKey(
+              "dGVzdGV0YWtlMToyNDk4OTJjMC0yZGQ3LTRlZDgtODMzMC1jYzk5ZDUzMzA0ZTA="
+            )
+            .withButton({ color: "#2CC3D5", icon: "" })
+            .withCustomCommonUrl("https://chat.blip.ai/")
+            .build();
+        };
+      })();
+    </script>
+  </body>
+</html>
